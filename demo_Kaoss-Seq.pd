@@ -1,0 +1,63 @@
+#N canvas 198 23 884 523 10;
+#X obj 267 357 / 127;
+#X obj 196 357 mtof;
+#X obj 196 469 output~;
+#X obj 196 401 *~;
+#X obj 267 426 line~;
+#X msg 267 403 \$1 1;
+#X obj 267 380 t b f;
+#X obj 307 403 del 50;
+#X obj 196 379 osc~;
+#N canvas 559 22 369 282 delay 0;
+#X obj 81 122 delwrite~ signal 1000;
+#X obj 81 100 +~;
+#X obj 45 67 inlet~;
+#X obj 44 177 outlet~;
+#X obj 94 177 outlet~;
+#X obj 121 100 *~ 0.5;
+#X obj 81 142 delread~ signal 300;
+#X obj 211 142 delread~ signal 450;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 5 0 1 1;
+#X connect 6 0 3 0;
+#X connect 7 0 4 0;
+#X connect 7 0 5 0;
+#X restore 196 445 pd delay;
+#X msg 307 426 0 50;
+#X obj 196 423 *~ 0.3;
+#X obj 535 344 cnv 15 31 30 empty empty 1 11 12 0 14 -149761 -220534
+0;
+#X obj 535 384 cnv 15 31 30 empty empty 2 11 12 0 14 -152833 -220534
+0;
+#X obj 535 424 cnv 15 31 30 empty empty 3 11 12 0 14 -151809 -220534
+0;
+#X obj 45 154 cnv 15 31 30 empty empty 1 11 12 0 14 -149761 -220534
+0;
+#X obj 416 32 cnv 15 31 30 empty empty 2 11 12 0 14 -152833 -220534
+0;
+#X obj 83 33 cnv 15 31 30 empty empty 3 11 12 0 14 -151809 -220534
+0;
+#X text 577 431 Run;
+#X text 88 357 MIDI_note_number;
+#X text 309 356 velocity;
+#X text 577 351 choose Key & Scale;
+#X text 577 391 press 'All_Rand' button;
+#X obj 87 73 Kaoss-Seq;
+#X connect 0 0 6 0;
+#X connect 1 0 8 0;
+#X connect 3 0 11 0;
+#X connect 4 0 3 1;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 6 1 5 0;
+#X connect 7 0 10 0;
+#X connect 8 0 3 0;
+#X connect 9 0 2 0;
+#X connect 9 1 2 1;
+#X connect 10 0 4 0;
+#X connect 11 0 9 0;
+#X connect 23 0 1 0;
+#X connect 23 1 0 0;
