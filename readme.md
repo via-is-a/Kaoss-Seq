@@ -21,4 +21,4 @@ Youtube
 # Requirement
 
 
-* Purr-data(NOT Pure-data vanila)
+* Purr-data(NOT Pure-data vanilla)
