@@ -5,7 +5,9 @@ Kaoss-Seq is a random MIDI sequencer. This supports 31 different scale patterns 
 
 # DEMO
 
-youtube_link(あとで春)
+Youtube
+
+[https://youtu.be/BFAknTYrFpw](https://youtu.be/BFAknTYrFpw)
 
 # Features
 
@@ -19,4 +21,4 @@ youtube_link(あとで春)
 # Requirement
 
 
-* Purr-data(NOT vanila)
+* Purr-data(NOT Pure-data vanila)
